@@ -1,0 +1,8 @@
+<button
+  mat-raised-button
+  color="primary"
+  *ngIf="todoListExists"
+  (click)="removeCompletedItems()"
+>
+  Remove completed items
+</button>

@@ -1,0 +1,7 @@
+<mat-checkbox
+  [checked]="todo.isCompleted"
+  (change)="toggleCompletedStateOfTodoItem()">{{ todo.text }}
+</mat-checkbox>
+<button mat-button matSuffix mat-icon-button (click)="removeTodoItem()">
+  <mat-icon>delete</mat-icon>
+</button>

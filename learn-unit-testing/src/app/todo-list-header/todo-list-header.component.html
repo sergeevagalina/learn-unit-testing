@@ -1,0 +1,9 @@
+<section class="todo-list-header">
+  <h1 class="todo-list-header__title">Todo List</h1>
+  <mat-form-field class="todo-list-header__form-field">
+    <input matInput placeholder="write a new todo" type="text" [formControl]="text">
+    <button mat-button matSuffix mat-icon-button (click)="addTodoItem()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-form-field>
+</section>

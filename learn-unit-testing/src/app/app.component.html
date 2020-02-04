@@ -1,0 +1,14 @@
+<section class="todo-list-wrapper">
+  <app-todo-list-header (add)="onAddTodoItem($event)"></app-todo-list-header>
+  <app-todo-list
+    (remove)="onRemoveTodoItem($event)"
+    (toggleCompletedState)="onToggleCompletedStateOfTodoItem($event)"
+    [todoList]="todoList"
+  >
+  </app-todo-list>
+  <app-todo-list-footer
+    (removeCompleted)="onRemoveCompletedItems()"
+    [todoListExists]="todoListExists"
+  >
+  </app-todo-list-footer>
+</section>
